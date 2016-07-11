@@ -201,7 +201,6 @@ class SEO_Icons_SiteConfig_DataExtension extends DataExtension
         ));
 
         // @todo Safari Pinned Tab ~ maybe ??
-
     }
 
     public function onAfterWrite()
@@ -216,7 +215,6 @@ class SEO_Icons_SiteConfig_DataExtension extends DataExtension
         } else {
             // @todo SilverStripe failure message
         }
-
     }
 
 
@@ -227,7 +225,6 @@ class SEO_Icons_SiteConfig_DataExtension extends DataExtension
 
     public function fetchPiniconTitle()
     {
-
         if ($this->owner->PiniconTitle) {
             // return pinicon title
             return $this->owner->PiniconTitle;
@@ -235,29 +232,24 @@ class SEO_Icons_SiteConfig_DataExtension extends DataExtension
             // default
             return false;
         }
-
     }
 
     public function fetchAndroidPiniconThemeColor()
     {
-
         if ($this->owner->AndroidPiniconThemeColor) {
             return '#' . $this->owner->AndroidPiniconThemeColor;
         } else {
             return false;
         }
-
     }
 
     public function fetchWindowsPiniconBackgroundColor()
     {
-
         if ($this->owner->WindowsPiniconBackgroundColor) {
             return '#' . $this->owner->WindowsPiniconBackgroundColor;
         } else {
             return false;
         }
-
     }
 
     //// generate functions
@@ -340,9 +332,6 @@ class SEO_Icons_SiteConfig_DataExtension extends DataExtension
                 // failure
                 return false;
             }
-
         }
-
     }
-
 }

@@ -93,13 +93,11 @@ class SEO_Icons_SiteTree_DataExtension extends DataExtension
 
             // For iPhone 6 Plus with @3× display
             $metadata .= $owner->MarkupLink('apple-touch-icon', $IOSPinicon->SetSize(180, 180)->getAbsoluteURL(), 'image/png', '180x180');
-
         } else {
 
             // @todo: hmm??
 //			// disabled header
 //			$metadata .= $owner->MarkupComment('iOS Pinned Icon DISABLED');
-
         }
 
         //// Android Pinicon
@@ -138,7 +136,6 @@ class SEO_Icons_SiteTree_DataExtension extends DataExtension
 
             // The classic favicon, displayed in the tabs
             $metadata .= $owner->MarkupLink('icon', $HTML5Favicon->SetSize(16, 16)->getAbsoluteURL(), 'image/png', '16x16');
-
         }
 
         //// Android Pinicon Manifest
@@ -155,7 +152,6 @@ class SEO_Icons_SiteTree_DataExtension extends DataExtension
 
             //
             $metadata .= $owner->MarkupLink('manifest', '/manifest.json');
-
         }
 
         //// Windows Pinicon Manifest
@@ -190,9 +186,6 @@ class SEO_Icons_SiteTree_DataExtension extends DataExtension
 
             // large tile
 //			$metadata .= $owner->MarkupMeta('msapplication-square310x310logo', $WindowsPinicon->Fill(310,310)->getAbsoluteURL());
-
         }
-
     }
-
 }
